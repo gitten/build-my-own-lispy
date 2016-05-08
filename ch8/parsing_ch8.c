@@ -205,7 +205,7 @@ int main(int argc, char** argv) {
   /* Define grammars */
   mpca_lang(MPCA_LANG_DEFAULT,
             "\
-            number : /-?[0-9]+.?[0-9]{1,}?/ ;                \
+            number : /-?[0-9]+.?[0-9]*/ ;                    \
             operator : '+' | '-' | '*' |                     \
                        '/' | '%' | '^' |                     \
                        /min/ | /max/ | /mod/ ;               \
